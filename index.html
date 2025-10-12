@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -306,6 +306,24 @@
             margin-top: 10px;
         }
         
+        /* Group info section */
+        .group-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 20px;
+            margin-top: 40px;
+            border: 2px solid #81C784;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+        
+        .group-info p {
+            color: #2E7D32;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        
         /* Flexible Learning */
         .flexible-learning {
             background: linear-gradient(135deg, #f5f5f5 0%, #FFF8E1 100%);
@@ -487,11 +505,11 @@
         }
         
         /* Hide content by default */
-        .en-content, .fr-content {
+        .es-content, .fr-content {
             display: none;
         }
         
-        /* Responsive */
+        /* Mobile Responsive Design */
         @media (max-width: 768px) {
             .logo {
                 max-width: 250px;
@@ -559,6 +577,15 @@
                 top: 10px;
                 right: 10px;
             }
+            
+            .group-info {
+                padding: 20px;
+                margin: 30px auto 0;
+            }
+            
+            .group-info p {
+                font-size: 1.1rem;
+            }
         }
         
         @media (max-width: 480px) {
@@ -622,6 +649,36 @@
             .pack-price {
                 font-size: 1.5rem;
             }
+            
+            /* Mobile-specific adjustments for better spacing */
+            .header-dark-green {
+                padding: 30px 0;
+            }
+            
+            .header-orange {
+                padding: 25px 0;
+            }
+            
+            .footer-dark-green {
+                padding: 50px 0 25px 0;
+            }
+            
+            .section {
+                margin-bottom: 60px;
+            }
+            
+            .packs-grid-2 {
+                margin-top: 30px;
+            }
+            
+            .group-info {
+                padding: 15px;
+                margin: 25px auto 0;
+            }
+            
+            .group-info p {
+                font-size: 1rem;
+            }
         }
         
         /* Animation classes */
@@ -648,8 +705,8 @@
 </head>
 <body>
     <div class="language-toggle">
-        <button class="language-btn active" data-lang="es">ES</button>
-        <button class="language-btn" data-lang="en">EN</button>
+        <button class="language-btn active" data-lang="en">EN</button>
+        <button class="language-btn" data-lang="es">ES</button>
         <button class="language-btn" data-lang="fr">FR</button>
     </div>
 
@@ -665,15 +722,15 @@
         </div>
     </div>
 
-    <!-- Orange section with "¡CONTÁCTANOS!" in contact-style box -->
+    <!-- Orange section with "CONTACT US!" in contact-style box -->
     <div class="header-orange">
-        <div class="contact-main-title-box es-content">¡CONTÁCTANOS!</div>
         <div class="contact-main-title-box en-content">CONTACT US!</div>
+        <div class="contact-main-title-box es-content">¡CONTÁCTANOS!</div>
         <div class="contact-main-title-box fr-content">CONTACTEZ-NOUS !</div>
         <div class="contact-boxes">
             <div class="contact-box">
-                <a href="https://wa.me/524423763341" target="_blank">
-                    📱 +52 442 376 3341
+                <a href="https://wa.me/529581446001" target="_blank">
+                    📱 +52 958 144 6001
                 </a>
             </div>
             <div class="contact-box">
@@ -687,18 +744,18 @@
 
     <main class="container">
         <section class="section first-section">
-            <div class="section-title-box animate es-content">¿Quiénes somos?</div>
             <div class="section-title-box animate en-content">Who are we?</div>
+            <div class="section-title-box animate es-content">¿Quiénes somos?</div>
             <div class="section-title-box animate fr-content">Qui sommes-nous ?</div>
-            <div class="section-content animate delay-1 es-content">
-                <p>Somos un colectivo de maestras hablantes nativas de español que vivimos en Mazunte, en la hermosa costa de Oaxaca. Llevamos más de 10 años enseñando español con entusiasmo, compromiso y mucho corazón.</p>
-                <p>Nos encanta compartir nuestro idioma y cultura de una forma cercana, divertida, empática y adaptada a cada estudiante.</p>
-                <p>Tenemos formación profesional en educación en general y en ELE (Español como Lengua Extranjera), y contamos con mucha experiencia en clases individuales y grupales. ¡Nos adaptamos a ti y a tu forma de aprender!</p>
-            </div>
             <div class="section-content animate delay-1 en-content">
                 <p>We are a collective of native Spanish-speaking teachers living in Mazunte, on the beautiful coast of Oaxaca. We have been teaching Spanish with enthusiasm, commitment, and lots of heart for over 10 years.</p>
                 <p>We love sharing our language and culture in a close, fun, empathetic way that's adapted to each student.</p>
                 <p>We have professional training in education in general and ELE (Spanish as a Foreign Language), and we have extensive experience in both individual and group classes. We adapt to you and your learning style!</p>
+            </div>
+            <div class="section-content animate delay-1 es-content">
+                <p>Somos un colectivo de maestras hablantes nativas de español que vivimos en Mazunte, en la hermosa costa de Oaxaca. Llevamos más de 10 años enseñando español con entusiasmo, compromiso y mucho corazón.</p>
+                <p>Nos encanta compartir nuestro idioma y cultura de una forma cercana, divertida, empática y adaptada a cada estudiante.</p>
+                <p>Tenemos formación profesional en educación en general y en ELE (Español como Lengua Extranjera), y contamos con mucha experiencia en clases individuales y grupales. ¡Nos adaptamos a ti y a tu forma de aprender!</p>
             </div>
             <div class="section-content animate delay-1 fr-content">
                 <p>Nous sommes un collectif d'enseignantes hispanophones vivant à Mazunte, sur la magnifique côte d'Oaxaca. Nous enseignons l'espagnol avec enthousiasme, engagement et beaucoup de cœur depuis plus de 10 ans.</p>
@@ -708,14 +765,14 @@
         </section>
 
         <section class="section">
-            <div class="section-title-box animate delay-2 es-content">¿Cómo enseñamos?</div>
             <div class="section-title-box animate delay-2 en-content">How do we teach?</div>
+            <div class="section-title-box animate delay-2 es-content">¿Cómo enseñamos?</div>
             <div class="section-title-box animate delay-2 fr-content">Comment enseignons-nous ?</div>
-            <div class="section-content animate delay-3 es-content">
-                <p>Nuestra forma de enseñar es inmersiva, dinámica y súper flexible. Lo más importante para nosotras es que te sientas cómodo/a y en confianza hablando desde el primer día.</p>
-            </div>
             <div class="section-content animate delay-3 en-content">
                 <p>Our teaching approach is immersive, dynamic, and super flexible. What's most important to us is that you feel comfortable and confident speaking from day one.</p>
+            </div>
+            <div class="section-content animate delay-3 es-content">
+                <p>Nuestra forma de enseñar es inmersiva, dinámica y súper flexible. Lo más importante para nosotras es que te sientas cómodo/a y en confianza hablando desde el primer día.</p>
             </div>
             <div class="section-content animate delay-3 fr-content">
                 <p>Notre méthode d'enseignement est immersive, dynamique et super flexible. Ce qui est le plus important pour nous, c'est que vous vous sentiez à l'aise et en confiance pour parler dès le premier jour.</p>
@@ -723,24 +780,24 @@
             
             <div class="features">
                 <div class="feature animate delay-4">
-                    <h3 class="es-content">🎯 Nuestro Enfoque</h3>
                     <h3 class="en-content">🎯 Our Approach</h3>
+                    <h3 class="es-content">🎯 Nuestro Enfoque</h3>
                     <h3 class="fr-content">🎯 Notre Approche</h3>
                     <ul>
-                        <li class="es-content">Clases de conversación</li>
                         <li class="en-content">Conversation classes</li>
+                        <li class="es-content">Clases de conversación</li>
                         <li class="fr-content">Cours de conversation</li>
-                        <li class="es-content">Gramática a fondo (si quieres ir más allá)</li>
                         <li class="en-content">In-depth grammar (if you want to go further)</li>
+                        <li class="es-content">Gramática a fondo (si quieres ir más allá)</li>
                         <li class="fr-content">Grammaire approfondie (si vous voulez aller plus loin)</li>
-                        <li class="es-content">Programas combinados para que domines el idioma</li>
                         <li class="en-content">Combined programs to help you master the language</li>
+                        <li class="es-content">Programas combinados para que domines el idioma</li>
                         <li class="fr-content">Programmes combinés pour maîtriser la langue</li>
-                        <li class="es-content">Tips y recomendaciones para conectar con la comunidad</li>
                         <li class="en-content">Tips and recommendations to connect with the community</li>
+                        <li class="es-content">Tips y recomendaciones para conectar con la comunidad</li>
                         <li class="fr-content">Conseils et recommandations pour vous connecter à la communauté</li>
-                        <li class="es-content">Todos los niveles: desde principiante hasta avanzado</li>
                         <li class="en-content">All levels: from beginner to advanced</li>
+                        <li class="es-content">Todos los niveles: desde principiante hasta avanzado</li>
                         <li class="fr-content">Tous les niveaux : du débutant à l'avancé</li>
                     </ul>
                 </div>
@@ -748,102 +805,108 @@
         </section>
 
         <section class="section">
-            <div class="section-title-box animate delay-1 es-content">Nuestros Packs</div>
-            <div class="section-title-box animate delay-1 en-content">Our Packages</div>
-            <div class="section-title-box animate delay-1 fr-content">Nos Forfaits</div>
+            <div class="section-title-box animate delay-1 en-content">OUR INDIVIDUAL PACKS (1 person)</div>
+            <div class="section-title-box animate delay-1 es-content">NUESTROS PACKS INDIVIDUALES (1 persona)</div>
+            <div class="section-title-box animate delay-1 fr-content">NOS FORFAITS INDIVIDUELS (1 personne)</div>
             <div class="packs-grid-3">
                 <div class="pack-card animate delay-2">
-                    <h3 class="es-content">🎯 Clase Suelta</h3>
                     <h3 class="en-content">🎯 Single Class</h3>
+                    <h3 class="es-content">🎯 Clase Suelta</h3>
                     <h3 class="fr-content">🎯 Cours Unique</h3>
                     <div class="pack-price">$300 MXN</div>
-                    <div class="pack-per-hour es-content">por hora</div>
                     <div class="pack-per-hour en-content">per hour</div>
+                    <div class="pack-per-hour es-content">por hora</div>
                     <div class="pack-per-hour fr-content">par heure</div>
                 </div>
                 <div class="pack-card animate delay-3">
-                    <h3 class="es-content">🎯 Pack 10h</h3>
                     <h3 class="en-content">🎯 10h Package</h3>
+                    <h3 class="es-content">🎯 Pack 10h</h3>
                     <h3 class="fr-content">🎯 Forfait 10h</h3>
                     <div class="pack-price">$2,800 MXN</div>
                     <div class="pack-per-hour">($280/h)</div>
-                    <div class="pack-duration es-content">A finalizar en 1 semana máximo</div>
                     <div class="pack-duration en-content">To be completed within 1 week maximum</div>
+                    <div class="pack-duration es-content">A finalizar en 1 semana máximo</div>
                     <div class="pack-duration fr-content">À terminer en 1 semaine maximum</div>
                 </div>
                 <div class="pack-card animate delay-4">
-                    <h3 class="es-content">🎯 Pack 12h</h3>
                     <h3 class="en-content">🎯 12h Package</h3>
+                    <h3 class="es-content">🎯 Pack 12h</h3>
                     <h3 class="fr-content">🎯 Forfait 12h</h3>
                     <div class="pack-price">$3,360 MXN</div>
                     <div class="pack-per-hour">($280/h)</div>
-                    <div class="pack-duration es-content">A finalizar en 1 o 2 semanas máximo</div>
                     <div class="pack-duration en-content">To be completed within 1-2 weeks maximum</div>
+                    <div class="pack-duration es-content">A finalizar en 1 o 2 semanas máximo</div>
                     <div class="pack-duration fr-content">À terminer en 1 ou 2 semaines maximum</div>
                 </div>
             </div>
             <div class="packs-grid-2">
                 <div class="pack-card animate delay-1">
-                    <h3 class="es-content">🎯 Pack 15h</h3>
                     <h3 class="en-content">🎯 15h Package</h3>
+                    <h3 class="es-content">🎯 Pack 15h</h3>
                     <h3 class="fr-content">🎯 Forfait 15h</h3>
                     <div class="pack-price">$4,050 MXN</div>
                     <div class="pack-per-hour">($270/h)</div>
-                    <div class="pack-duration es-content">A finalizar en 1 o 2 semanas máximo</div>
                     <div class="pack-duration en-content">To be completed within 1-2 weeks maximum</div>
+                    <div class="pack-duration es-content">A finalizar en 1 o 2 semanas máximo</div>
                     <div class="pack-duration fr-content">À terminer en 1 ou 2 semaines maximum</div>
                 </div>
                 <div class="pack-card animate delay-2">
-                    <h3 class="es-content">🎯 Pack 20h</h3>
                     <h3 class="en-content">🎯 20h Package</h3>
+                    <h3 class="es-content">🎯 Pack 20h</h3>
                     <h3 class="fr-content">🎯 Forfait 20h</h3>
                     <div class="pack-price">$5,300 MXN</div>
                     <div class="pack-per-hour">($265/h)</div>
-                    <div class="pack-duration es-content">A finalizar en 1 o 2 semanas máximo</div>
                     <div class="pack-duration en-content">To be completed within 1-2 weeks maximum</div>
+                    <div class="pack-duration es-content">A finalizar en 1 o 2 semanas máximo</div>
                     <div class="pack-duration fr-content">À terminer en 1 ou 2 semaines maximum</div>
                 </div>
+            </div>
+            
+            <div class="group-info">
+                <p class="en-content">For 2 or more students, please contact us directly for information about discounts on semi-private or group classes.</p>
+                <p class="es-content">Para 2 o más estudiantes, contáctanos directamente para información sobre descuentos en clases semi-privadas o grupales.</p>
+                <p class="fr-content">Pour 2 étudiants ou plus, contactez-nous directement pour obtenir des informations sur les réductions pour les cours semi-privés ou en groupe.</p>
             </div>
         </section>
 
         <div class="flexible-learning">
             <div class="container">
                 <div class="flexible-title-container">
-                    <div class="flexible-title-box animate delay-3 es-content">Tú decides cómo aprender</div>
                     <div class="flexible-title-box animate delay-3 en-content">You decide how to learn</div>
+                    <div class="flexible-title-box animate delay-3 es-content">Tú decides cómo aprender</div>
                     <div class="flexible-title-box animate delay-3 fr-content">Vous décidez comment apprendre</div>
                 </div>
                 <div class="flexible-grid">
                     <div class="flexible-item animate delay-4">
-                        <h3 class="es-content">🎯 Temas que te interesan</h3>
                         <h3 class="en-content">🎯 Topics that interest you</h3>
+                        <h3 class="es-content">🎯 Temas que te interesan</h3>
                         <h3 class="fr-content">🎯 Sujets qui vous intéressent</h3>
-                        <p class="es-content">Cultura mexicana, viajes, música, conversación, gramática… ¡o una mezcla de todo!</p>
                         <p class="en-content">Mexican culture, travel, music, conversation, grammar... or a mix of everything!</p>
+                        <p class="es-content">Cultura mexicana, viajes, música, conversación, gramática… ¡o una mezcla de todo!</p>
                         <p class="fr-content">Culture mexicaine, voyages, musique, conversation, grammaire... ou un mélange de tout !</p>
                     </div>
                     <div class="flexible-item animate delay-1">
-                        <h3 class="es-content">🕒 Horarios flexibles</h3>
                         <h3 class="en-content">🕒 Flexible schedules</h3>
+                        <h3 class="es-content">🕒 Horarios flexibles</h3>
                         <h3 class="fr-content">🕒 Horaires flexibles</h3>
-                        <p class="es-content">Que se ajustan a tu ritmo y estilo de vida</p>
                         <p class="en-content">That adapt to your pace and lifestyle</p>
+                        <p class="es-content">Que se ajustan a tu ritmo y estilo de vida</p>
                         <p class="fr-content">Qui s'adaptent à votre rythme et style de vie</p>
                     </div>
                     <div class="flexible-item animate delay-2">
-                        <h3 class="es-content">⚡ Cursos intensivos</h3>
                         <h3 class="en-content">⚡ Intensive courses</h3>
+                        <h3 class="es-content">⚡ Cursos intensivos</h3>
                         <h3 class="fr-content">⚡ Cours intensifs</h3>
-                        <p class="es-content">Si quieres avanzar rápido y sumergirte completamente</p>
                         <p class="en-content">If you want to advance quickly and immerse yourself completely</p>
+                        <p class="es-content">Si quieres avanzar rápido y sumergirte completamente</p>
                         <p class="fr-content">Si vous voulez progresser rapidement et vous immerger complètement</p>
                     </div>
                     <div class="flexible-item animate delay-3">
-                        <h3 class="es-content">💸 Descuentos por paquetes</h3>
                         <h3 class="en-content">💸 Package discounts</h3>
+                        <h3 class="es-content">💸 Descuentos por paquetes</h3>
                         <h3 class="fr-content">💸 Réductions sur les forfaits</h3>
-                        <p class="es-content">Beneficios especiales al reservar múltiples clases</p>
                         <p class="en-content">Special benefits when booking multiple classes</p>
+                        <p class="es-content">Beneficios especiales al reservar múltiples clases</p>
                         <p class="fr-content">Avantages spéciaux lors de la réservation de plusieurs cours</p>
                     </div>
                 </div>
@@ -851,8 +914,8 @@
         </div>
 
         <div class="quote animate delay-4">
-            <p class="es-content">Tu meta es la nuestra: hablar, entender y vivir el español con confianza desde el primer día.</p>
             <p class="en-content">Your goal is ours: to speak, understand, and live Spanish with confidence from day one.</p>
+            <p class="es-content">Tu meta es la nuestra: hablar, entender y vivir el español con confianza desde el primer día.</p>
             <p class="fr-content">Votre objectif est le nôtre : parler, comprendre et vivre l'espagnol avec confiance dès le premier jour.</p>
         </div>
     </main>
@@ -861,13 +924,13 @@
         <div class="footer-dark-green">
             <img src="img/logo-escuela.jpeg" alt="Órale Mazunte Spanish School Logo" class="footer-logo">
             <div class="footer-contact-container">
-                <div class="footer-contact-title-box es-content">¡Reserva ya!</div>
                 <div class="footer-contact-title-box en-content">Book now!</div>
+                <div class="footer-contact-title-box es-content">¡Reserva ya!</div>
                 <div class="footer-contact-title-box fr-content">Réservez maintenant !</div>
                 <div class="footer-contact-boxes">
                     <div class="footer-contact-box">
-                        <a href="https://wa.me/524423763341" target="_blank">
-                            📱 +52 442 376 3341
+                        <a href="https://wa.me/529581446001" target="_blank">
+                            📱 +52 958 144 6001
                         </a>
                     </div>
                     <div class="footer-contact-box">
@@ -889,10 +952,10 @@
             const enContent = document.querySelectorAll('.en-content');
             const frContent = document.querySelectorAll('.fr-content');
             
-            // Ensure only Spanish is shown on initial load
-            enContent.forEach(el => el.style.display = 'none');
+            // Ensure only English is shown on initial load (as requested)
+            esContent.forEach(el => el.style.display = 'none');
             frContent.forEach(el => el.style.display = 'none');
-            esContent.forEach(el => el.style.display = 'block');
+            enContent.forEach(el => el.style.display = 'block');
             
             languageButtons.forEach(button => {
                 button.addEventListener('click', function() {
